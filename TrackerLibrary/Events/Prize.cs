@@ -22,7 +22,6 @@ namespace TrackerLibrary
 
         }
 
-
         public Prize()
         {
 

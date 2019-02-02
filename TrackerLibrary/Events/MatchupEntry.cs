@@ -14,6 +14,6 @@ namespace TrackerLibrary
         public double Score { get; set; }
         public int ParentId { get; set; }
         public Matchup ParentMatchup { get; set; }
-
+        //It has to have the same name as what you have in the Sql database
     }
 }

@@ -13,14 +13,17 @@ namespace TournamentUI
 {
     public partial class CreateTournament : Form, IPrizeRequester,ITeamRequester
     {
+
         List<Team> avaliableTeams = new List<Team>();
         List<Team> selectedTeams = new List<Team>();
         List<Prize> selectedPrizes = new List<Prize>();
-        public CreateTournament()
+        ITournamentRequester receiver;
+        public CreateTournament(ITournamentRequester passer)
         {
             InitializeComponent();
             InitializeTeamDropDown();
             InitializePrizesListbox();
+            receiver = passer;
         }
 
         private void InitializeTeamDropDown()
@@ -173,15 +176,17 @@ namespace TournamentUI
                     tm.TournamentPrizesString = tm.TournamentPrizesString + $"{prize.Id}";
                 }
             }
-            //TODO Matchup
             MatchupLogic.CreateRounds(tm);
             
 
             GlobalConfig.Connections.CreateTournament(tm);
+            receiver.TournamentComplete(tm);
             MessageBox.Show("Tournament created", "Attention");
-            TournamentOperator op = new TournamentOperator(tm);
-            op.Show();
-            //this.Close();                    
+            //TournamentOperator op = new TournamentOperator(tm);
+            //op.Show();
+            this.Close();  
+            
+
         }
     }
 }

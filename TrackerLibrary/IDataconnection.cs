@@ -15,5 +15,7 @@ namespace TrackerLibrary
         List<Team> GetAllTeams();
         List<Prize> GetAllPrizes();
         Tournament CreateTournament(Tournament model);
+        List<Tournament> GetAllTournaments();
+        void UpdateMatchups(Matchup model);
     }
 }

@@ -88,9 +88,10 @@ namespace TrackerLibrary
 
         private static int FindOutRounds(List<Team> teams)
         {
+            //TODO Fix FindOutRounds
             int n = teams.Count;
-            int rounds = 0;
-            while (n >= Math.Pow(2,rounds))
+            int rounds = 1;
+            while (n > Math.Pow(2,rounds))
             {
                 rounds++;
             }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
-using TrackerLibrary.DataAccess.TextProcessor;
+using TrackerLibrary.DataAccess.TextProcessor; 
 
 namespace TrackerLibrary.DataAccess
 {
@@ -124,6 +124,10 @@ namespace TrackerLibrary.DataAccess
                     {
                         entry.Id = currentMatchupEntryId;
                         currentMatchupEntryId++;
+                        if (entry.TeamCompeting!=null)
+                        {
+                            entry.CompetingTeamId = entry.TeamCompeting.Id; 
+                        }
                     }
                 }
 
@@ -176,6 +180,11 @@ namespace TrackerLibrary.DataAccess
 
 
             return model;
+        }
+
+        public void UpdateMatchups(Matchup model)
+        {
+            throw new NotImplementedException();
         }
 
         public static void SaveRoundsFile(Tournament tournament, string matchupsFile, string entriesFile)
@@ -233,6 +242,14 @@ namespace TrackerLibrary.DataAccess
         {
             List<Team> team = new List<Team>();
             return team = TeamsFile.FullFilePath().LoadFile().ConvertToTeam();
-        } 
+        }
+
+        public List<Tournament> GetAllTournaments()
+        {
+            List<Tournament> tournament = new List<Tournament>();
+            return tournament = TournamentsFile.FullFilePath().LoadFile().ConvertToTournament();
+        }
+
+        
     }   
 }

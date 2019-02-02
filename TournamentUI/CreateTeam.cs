@@ -12,7 +12,7 @@ using TrackerLibrary;
 namespace TournamentUI
 {
     public partial class CreateTeam : Form
-    {
+    {      
         ITeamRequester receiver;
         public CreateTeam(ITeamRequester caller)
         {
@@ -24,6 +24,7 @@ namespace TournamentUI
             WireUpLists();
 
             receiver = caller;
+
         }
         public List<Person> avaliablePerson = new List<Person>();
         public List<Person> selectedPerson = new List<Person>();
