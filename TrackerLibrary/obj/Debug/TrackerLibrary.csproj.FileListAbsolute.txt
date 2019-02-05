@@ -7,3 +7,5 @@ C:\Users\dengd\source\repos\Tournament\TrackerLibrary\obj\Debug\TrackerLibrary.c
 C:\Users\dengd\source\repos\Tournament\TrackerLibrary\bin\Debug\Dapper.dll
 C:\Users\dengd\source\repos\Tournament\TrackerLibrary\bin\Debug\Dapper.xml
 C:\Users\dengd\source\repos\Tournament\TrackerLibrary\obj\Debug\TrackerLibrary.csproj.CopyComplete
+C:\Users\dengd\source\repos\Tournament\TrackerLibrary\bin\Debug\ImageProcessor.dll
+C:\Users\dengd\source\repos\Tournament\TrackerLibrary\bin\Debug\ImageProcessor.xml

@@ -64,6 +64,12 @@
     <Compile Include="CreateTournament.Designer.cs">
       <DependentUpon>CreateTournament.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageOperator.Designer.cs">
+      <DependentUpon>ImageOperator.cs</DependentUpon>
+    </Compile>
     <Compile Include="TournamentDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateTournament.resx">
       <DependentUpon>CreateTournament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageOperator.resx">
+      <DependentUpon>ImageOperator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

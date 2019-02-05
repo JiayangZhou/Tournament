@@ -17,3 +17,4 @@ C:\Users\dengd\source\repos\Tournament\TournamentUI\bin\Debug\TrackerLibrary.pdb
 C:\Users\dengd\source\repos\Tournament\TournamentUI\obj\Debug\TournamentUI.csproj.CopyComplete
 C:\Users\dengd\source\repos\Tournament\TournamentUI\bin\Debug\Dapper.dll
 C:\Users\dengd\source\repos\Tournament\TournamentUI\bin\Debug\Dapper.xml
+C:\Users\dengd\source\repos\Tournament\TournamentUI\obj\Debug\TournamentUI.ImageOperator.resources
